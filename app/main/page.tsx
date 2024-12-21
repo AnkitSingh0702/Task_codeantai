@@ -19,6 +19,7 @@ import {
 } from "@/components/ui/sidebar";
 import { mainNavItems, bottomNavItems } from "./main-nav";
 import { RepositoryCard } from "./repo-card";
+import { CiSearch } from "react-icons/ci";
 
 const repositories = [
   {
@@ -28,11 +29,6 @@ const repositories = [
     isPrivate: false,
     updatedAt: new Date("2024-12-20"),
     languageColor: "#61dafb",
-    contributors: [
-      { initials: "T", color: "#4F46E5" },
-      { initials: "S", color: "#0EA5E9" },
-      { initials: "G", color: "#22C55E" },
-    ],
   },
   {
     name: "codeant-ci-app",
@@ -41,10 +37,6 @@ const repositories = [
     isPrivate: true,
     updatedAt: new Date("2024-12-19"),
     languageColor: "#f7df1e",
-    contributors: [
-      { initials: "S", color: "#DC2626" },
-      { initials: "R", color: "#7C3AED" },
-    ],
   },
   {
     name: "analytics-dashboard",
@@ -53,10 +45,6 @@ const repositories = [
     isPrivate: true,
     updatedAt: new Date("2024-12-16"),
     languageColor: "#3776ab",
-    contributors: [
-      { initials: "V", color: "#059669" },
-      { initials: "S", color: "#DC2626" },
-    ],
   },
   {
     name: "mobile-app",
@@ -65,7 +53,6 @@ const repositories = [
     isPrivate: false,
     updatedAt: new Date("2024-12-18"),
     languageColor: "#ffac45",
-    contributors: [],
   },
   {
     name: "e-commerce-platform",
@@ -74,10 +61,6 @@ const repositories = [
     isPrivate: true,
     updatedAt: new Date("2024-12-15"),
     languageColor: "#b07219",
-    contributors: [
-      { initials: "S", color: "#DC2626" },
-      { initials: "A", color: "#0369A1" },
-    ],
   },
   {
     name: "blog-website",
@@ -86,7 +69,6 @@ const repositories = [
     isPrivate: false,
     updatedAt: new Date("2024-12-17"),
     languageColor: "#e34c26",
-    contributors: [],
   },
   {
     name: "social-network",
@@ -95,7 +77,6 @@ const repositories = [
     isPrivate: true,
     updatedAt: new Date("2024-12-14"),
     languageColor: "#4F5D95",
-    contributors: [],
   },
 ];
 
@@ -152,9 +133,9 @@ export default function Page() {
         </Sidebar>
 
         {/* Main Content */}
-        <div className="flex-1 p-6">
-          <div className="w-full md:w-[80rem] lg:w-[99rem] border border-gray-200 rounded-lg shadow-lg ">
-            <header className="flex flex-wrap md:flex-nowrap items-center gap-4   p-6">
+        <div className="flex-1 p-5">
+          <div className=" md:w-[76rem] lg:w-[76rem]   border border-gray-200 rounded-lg shadow-lg ">
+            <header className="flex flex-wrap md:flex-nowrap items-center gap-4   p-5">
               <SidebarTrigger className="md:hidden" />
               <div className="flex-1">
                 <h1 className="text-lg md:text-xl font-semibold">
@@ -188,24 +169,13 @@ export default function Page() {
                   placeholder="Search Repositories"
                   className="w-80 md:max-w-md pl-10 rounded-md border border-gray-300 focus:ring focus:ring-blue-500 "
                 />
-                <svg
-                  className="absolute left-7 top-2.5 h-4 w-4 text-gray-400"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                  />
-                </svg>
+                <CiSearch className="absolute left-7 top-2.5 h-4 w-4 text-zinc-700" />
               </div>
+              <div className="border-gray-200 border-b" />
 
               <div className=" cursor-pointer  bg-white ">
                 {repositories.map((repo) => (
-                  <RepositoryCard key={repo.name} {...repo} />
+                  <RepositoryCard contributors={[]} key={repo.name} {...repo} />
                 ))}
               </div>
             </div>

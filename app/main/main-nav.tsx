@@ -1,32 +1,31 @@
-// import Link from "next/link"
 import { Home, Code2, Shield, HelpCircle, Settings, LogOut } from 'lucide-react'
 
 export const mainNavItems = [
   {
     title: "Repositories",
     icon: Home,
-    href: "/repositories",
+    href: "",
     isActive: true,
   },
   {
     title: "AI Code Review",
     icon: Code2,
-    href: "/code-review",
+    href: "",
   },
   {
     title: "Cloud Security",
     icon: Shield,
-    href: "/security",
+    href: "",
   },
   {
     title: "How to Use",
     icon: HelpCircle,
-    href: "/help",
+    href: "",
   },
   {
     title: "Settings",
     icon: Settings,
-    href: "/settings",
+    href: "",
   },
 ]
 
@@ -34,12 +33,12 @@ export const bottomNavItems = [
   {
     title: "Support",
     icon: HelpCircle,
-    href: "/support",
+    href: "",
   },
   {
     title: "Logout",
     icon: LogOut,
-    href: "/logout",
+    href: "",
   },
 ]
 
