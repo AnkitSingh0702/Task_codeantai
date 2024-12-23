@@ -135,7 +135,7 @@ export default function Page() {
         </Sidebar>
 
         {/* Main Content */}
-        <div className="flex-1 p-4 ml-4">
+        <div className="flex-1  sm:p-4 sm:ml-4 ">
           <div className=" md:w-[76rem] lg:w-[76rem]   border border-gray-200 rounded-lg shadow-lg ">
             <header className="flex flex-wrap md:flex-nowrap items-center gap-4   p-5">
               <SidebarTrigger className="md:hidden" />
