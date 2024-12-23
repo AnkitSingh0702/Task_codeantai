@@ -1,8 +1,45 @@
+# CodeAnt AI Repository Dashboard
+
+A modern, responsive dashboard for managing and monitoring Git repositories with an intuitive interface and powerful features.
+
+# 💻 Demo
+<img src="gif/gif1.gif" />
+<img src="gif/gif2.gif" />
+
+## 🚀 Features
+
+- **Repository Management**: View and manage all your repositories in one place
+- **Status Indicators**: Visual indicators for public/private repositories
+- **Size Tracking**: Monitor repository sizes and updates
+- **Language Detection**: Automatic programming language detection with color coding
+- **Mobile Responsive**: Fully responsive design that works on all devices
+- **Modern UI**: Clean and intuitive interface using shadcn/ui components
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+## 🛠️ Tech Stack
 
-First, run the development server:
+- **Framework**: Next.js 15 (App Router)
+- **Styling**: Tailwind CSS
+- **UI Components**: Shadcnui
+- **Icons**: Lucide React , React Icons
+- **TypeScript**: For type safety
+
+## 📦 Installation
+
+If you wish to build the project locally and see what my website looks like, you can run the following command to first get my project on your system:
+
+```bash
+git clone https://github.com/AnkitSingh0702/Task_codeantai.git
+
+cd Task_codeantai
+```
+Install the dependencies:
+
+```bash
+npm install
+```
+
+start the development server:
 
 ```bash
 npm run dev
