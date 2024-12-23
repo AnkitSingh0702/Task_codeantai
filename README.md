@@ -2,7 +2,7 @@
 
 A modern, responsive dashboard for managing and monitoring Git repositories with an intuitive interface and powerful features.
 
-# 💻 Demo
+# 💻📱 Demo
 <img src="gif/gif1.gif" />
 <img src="gif/gif2.gif" />
 
