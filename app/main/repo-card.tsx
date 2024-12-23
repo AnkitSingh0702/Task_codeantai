@@ -20,6 +20,7 @@ export function RepositoryCard({
   languageColor = "#000",
 }: RepositoryCardProps) {
   return (
+    //repository card
     <div className="flex items-center justify-between px-6 py-4 border-b  hover:bg-zinc-100 transition-colors">
       <div className="space-y-3">
         <div className="flex items-center gap-2">

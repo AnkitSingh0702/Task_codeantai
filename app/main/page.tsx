@@ -21,6 +21,8 @@ import { mainNavItems, bottomNavItems } from "./main-nav";
 import { RepositoryCard } from "./repo-card";
 import { CiSearch } from "react-icons/ci";
 
+
+
 const repositories = [
   {
     name: "design-system",
@@ -107,7 +109,7 @@ export default function Page() {
               {mainNavItems.map((item) => (
                 <SidebarMenuItem key={item.title}>
                   <SidebarMenuButton asChild isActive={item.isActive}>
-                    <Link href={item.href}>
+                    <Link href="">
                       <item.icon className="h-4 w-4" />
                       <span>{item.title}</span>
                     </Link>
@@ -173,6 +175,7 @@ export default function Page() {
               </div>
               <div className="border-gray-200 border-b" />
 
+              {/* Respository Card Div */}
               <div className=" cursor-pointer  bg-white ">
                 {repositories.map((repo) => (
                   <RepositoryCard contributors={[]} key={repo.name} {...repo} />
